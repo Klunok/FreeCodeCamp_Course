@@ -1,1 +1,3 @@
-# FreeCodeCamp_Course
+# FreeCodeCamp_Course — Coursework Repository
+
+This repo contains my coursework. 
