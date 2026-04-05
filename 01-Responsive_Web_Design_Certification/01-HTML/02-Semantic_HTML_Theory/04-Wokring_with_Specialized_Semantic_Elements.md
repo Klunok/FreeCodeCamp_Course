@@ -4,7 +4,7 @@
 A superscript is a symbol or letter printed above the normal line of text.
 
 Example:  
-```
+```html
 <p>2<sup>2</sup> (2 squared) is 4.</p>
 2² (2 squared) is 4.
 ```
@@ -12,7 +12,7 @@ Example:
 
 Common use cases for the **code** element would be for technical articles and documentation pages
 Example:
-```
+```html
 <p>
   To set the text color to blue in CSS, use the following code:
   <code>color: blue;</code>

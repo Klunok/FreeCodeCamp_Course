@@ -6,7 +6,7 @@ Using correct semantic elements can improve your development experience. Rather 
 
 The most important aspect of creating a structural hierarchy is the proper use of heading elements. Heading elements are numbered as ```h1```, ```h2```, ```h3```, and so on. These numbers represent the heading level for that element.
 
-```
+```html
 <section>
   <h1>freeCodeCamp</h1>
   <h2>Learn Front-End Development</h2>
@@ -19,18 +19,17 @@ Many presentational HTML elements are deprecated, which means that they are outd
 
 Enable the interactive editor and add center tags around the <p>Another example text.</p> to see it centered on the page.
 
-```
+```html
 <center>
   This text is centered.
   <p>HTML is awesome.</p>
 </center>
-
 <p>Another example text.</p>
 ```
 
 Enable the interactive editor and add big tags around the Some other text and see the changes in the preview window.
 
-```
+```html
 <p>
   This text has a normal font size.
   <big>This text is larger.</big>
