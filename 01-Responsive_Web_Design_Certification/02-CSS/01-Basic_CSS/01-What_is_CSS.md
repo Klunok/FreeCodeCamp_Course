@@ -58,6 +58,40 @@ Instead, it's better to design your website to be responsive and readable at dif
 
 These default browser styles provide basic formatting to ensure that HTML elements are displayed in a readable way across all browsers.
 
+# What Are Inline, Internal, and External CSS, and When Should You Use Each One?
+
+ CSS can be applied to a webpage in three main ways: inline, internal, or external.  
+ **Inline** CSS is written within an HTML using `style`. 
+ Example:
+```html
+<p style="color: green;">This is an inline-styled paragraph.</p>
+```
+
+ **Internal** CCS is written within the `style` tags inside the `head` section of an HTML document.  
+ Example:
+```html
+<head>
+  <style> p { color: blue; } </style>
+</head>
+<body>
+  <p>This paragraph is styled using internal CSS.</p>
+</body>
+```
+
+ **External** CSS is written in a separate `.css` file and linked to the HTML documend using the `link` element in the `head` section.  
+ Example:
+```html
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>This paragraph is styled using external CSS.</p>
+</body>
+```
+
+ Element `link` has a `rel` attribute that specifies the relationship between the current document and the linked resource, such as linking to a stylesheet or an external resource.
+ The `href` attribute specifies the URL of the linked resource, indicating where tthe resource should be retrived from.
+
 
 
 
