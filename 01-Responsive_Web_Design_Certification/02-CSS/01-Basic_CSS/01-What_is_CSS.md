@@ -190,6 +190,63 @@ Example:
   </div>
 </div>
 ```
+ In above HTML structure, the `container` class is applied to a `div` element.  
+ Inside this container, there is a direct child `p` element ("First"), followed by two additional `div` elements, each containing a `p` element ("Second" and "Third").  
+ The first `p` element is a direct child of the `.container` element, while the other two `p` elements are nested inside other div elements, making them deeper descendants.  
+ To apply styles to just the direct child of the `container` class, you can use the child combinator like this:
+```html
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+  <p>First</p>
+  <div>
+    <p>Second</p>
+  </div>
+  <div>
+    <p>Third</p>
+  </div>
+</div>
+
+.container > p {
+  color: blue;
+}
+```
+ In the above example, only targeting the direct child of `container` class. This will give the direct child the text color of `blue`.
+ Because the other two paragraph elements are nested inside `div` elements, they are not considered direct children of the `container` class and will not get the text color of blue.
+ The next-sibling combinator (`+`) in CSS selects an element that immediately follows a specified sibling element.  
+ This combinator is useful when to apply styles to an element that directly follows another element, allowing for targeted styling based on the element's position relative to its siblings.
+Example:
+```html
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="A cute orange cat lying on its back."
+  />
+  <figcaption>A cute orange cat lying on its back.</figcaption>
+</figure>
+```
+
+ Here, we have a figure element containing an `img` element followed by a `figcaption` element.  
+ The `figcaption` element is the immediate sibling of the `img` element.
+
+ If you wanted to apply a black border around the `figcaption` element, you can use the next-sibling combinator like this:
+```html
+<link rel="stylesheet" href="styles.css">
+
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="A cute orange cat lying on its back."
+  />
+  <figcaption>A cute orange cat lying on its back.</figcaption>
+</figure>
+img + figcaption {
+  border: 4px solid black;
+}
+```
+ In this example, the next-sibling combinator (`+`) selects the `figcaption` element that immediately follows the `img` element. The applied CSS rule adds a `4px solid black border` around the `figcaption`.
+
+
 
 
 
