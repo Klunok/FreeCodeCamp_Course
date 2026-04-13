@@ -92,6 +92,107 @@ These default browser styles provide basic formatting to ensure that HTML elemen
  Element `link` has a `rel` attribute that specifies the relationship between the current document and the linked resource, such as linking to a stylesheet or an external resource.
  The `href` attribute specifies the URL of the linked resource, indicating where tthe resource should be retrived from.
 
+# How Do Width and Height Work?
+
+ In CSS, the `width` and `height` properties are used to control the dimenstions of elements on a webpage.
+ Properties can be defined in different units such as pixels `px`, percentages `%`, viewport units `vw`, `vh`, and more.
+
+ The `width`. If do not specify, then the default is set to `auto`.  
+ For `div` element, `width: auto` makes it exopand to fill the full width of its parent container.  
+ The `height`. Similarly, the height is `auto` by default.
+ Example:
+
+```html
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+```
+
+ Example has a `div` element with class named `box`, This element will be occupying `100px` in height and width, whereas the background color will be `shyblue`.  
+ Pixels are a fixed-size unit of measurement in CSS, providing precise control over dimensions.  
+ The `min-width` property specifies the minimum width an element can be.  
+ The `min-heght` property specifies the minimum height an element can be.  
+ Example:
+
+```html
+<head>
+  <style>
+    .box {
+      width: 50px;
+      min-width: 100px;
+      height: 50px;
+      min-height: 100px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+```
+ The `max-width` property specifies the maximum width an element can be.  
+ The `max-heght` property specifies the maximum height an element can be.  
+ Example:
+```html
+<head>
+  <style>
+    .box {
+      width: 200px;
+      max-width: 150px;
+      height: 200px;
+      max-height: 150px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+```
+
+# What Are the Different Types of CSS Combinators?
+
+ CSS combinators are used to define the relationship between selectors in CSS.  
+ They help in selecting elements based on their relationship to other elements, which allows for more precise and efficient styling.
+Example:
+```html
+<link rel="stylesheet" href="styles.css">
+
+<figure>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Relaxing Cat">
+  <figcaption>A relaxing cat with a border</figcaption>
+</figure>
+figure img {
+  border: 4px solid red;
+}
+```
+
+  The descendant combinator to select all image elements inside figure elements and apply a solid red border on all four sides.  
+ The child combinator (`>`) in CSS is used to select elements that are direct children of a specified parent element.  
+Example:
+```html
+<div class="container">
+  <p>First</p>
+  <div>
+    <p>Second</p>
+  </div>
+  <div>
+    <p>Third</p>
+  </div>
+</div>
+```
+
+
+
 
 
 
