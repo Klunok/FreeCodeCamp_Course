@@ -12,7 +12,7 @@ CSS is responsible for the styles of a web page. All of these styles are made up
 A CSS rule is made up of two main parts: a selector and a declaration block.
 
 Example:
-```
+```html
 selector {
   property: value;
 }
