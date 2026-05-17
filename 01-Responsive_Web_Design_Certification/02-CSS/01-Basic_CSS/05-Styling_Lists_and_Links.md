@@ -201,7 +201,7 @@ a:link {
 a:visited {
   color: purple;
 }
-```
+```    
 
 These styles serve several important functions.
 

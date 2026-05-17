@@ -1,4 +1,30 @@
-li {
-  margin-bottom: 40px;
+
+a 
+{
+    text-decoration: none;
 }
-```
+
+a:visited 
+{
+  color: purple;
+}
+
+a:link 
+{
+    color: blue;
+}
+
+a:hover 
+{
+    color: orange;
+}
+
+a:focus
+{
+    outline: 3px solid green; 
+}
+
+a:active
+{
+    color: red;
+}
