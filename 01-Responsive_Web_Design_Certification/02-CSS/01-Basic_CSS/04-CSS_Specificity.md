@@ -19,7 +19,7 @@ In this example, the first paragraph will be red while the other `p` elements wi
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 p {
   color: blue;
 }
@@ -36,7 +36,7 @@ Following this, ID selectors have a high level of specificity.
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 #para {
   color: red; 
 }
@@ -63,7 +63,7 @@ In this example, the first paragraph will be red because an `id` selector has a 
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 #para {
   color: red; 
 }
@@ -89,7 +89,7 @@ Type selectors, such as `div` and `h1`, and pseudo-elements like `::before` and 
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 #para {
   color: red; 
 }
@@ -111,7 +111,7 @@ Here is an example of setting the color for all elements to red using the `*` se
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 * {
   color: red;
 }
@@ -180,7 +180,7 @@ The specificity value for external styles is also determined by the selectors us
 </body>
 ```
 
-```
+```css
 .text {
   color: purple;
 }
@@ -205,7 +205,7 @@ Here is an example of using the universal selector for setting the `margin` and 
 <p>example paragraph element</p>
 ```
 
-```
+```css
 * {
   margin: 0;
   padding: 0;
@@ -269,7 +269,7 @@ Here is an example of a type selector targeting all paragraph elements on the pa
 <p>Paragraph three</p>
 ```
 
-```
+```css
 p {
   color: blue;
 }
@@ -301,7 +301,7 @@ Inside the CSS file, the type selector targets paragraphs, and the class selecto
 <p class="para">Here is another paragraph</p>
 ```
 
-```
+```css
 p {
   color: blue;
 }
@@ -328,7 +328,7 @@ Here is an example using a class selector:
 <p class="highlight">Example paragraph</p>
 ```
 
-```
+```css
 .highlight {
   color: green;
 }
@@ -353,7 +353,7 @@ Here is an example combining a paragraph type selector with a class selector:
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 p.bold-text {
   font-weight: bold;
 }
@@ -378,7 +378,7 @@ Here is an example using an ID selector:
 <p>Yet another paragraph</p>
 ```
 
-```
+```css
 #unique {
   color: purple;
 }
@@ -416,7 +416,7 @@ The CSS file applies the following styles to the paragraph element:
 </p>
 ```
 
-```
+```css
 .para {
   background-color: black;
   color: white;
@@ -435,7 +435,7 @@ To override those inline styles, you can use the `!important` keyword like this:
 </p>
 ```
 
-```
+```css
 .para {
   background-color: black !important;
   color: white !important;
@@ -486,7 +486,7 @@ In the HTML file, there is a single paragraph element. Then inside the CSS, we h
 <p>example paragraph</p>
 ```
 
-```
+```css
 p {
   color: blue;
 }
